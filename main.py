@@ -16,11 +16,11 @@ class Dam(db.Model):
     dam_level = db.Column(db.String(250), nullable=False)
 
 
-with app.app_context():
-    db.create_all()
-    new_dam = Dam(id=1, dam_name="Angat", dam_level="500")
-    db.session.add(new_dam)
-    db.session.commit()
+# with app.app_context():
+#     db.create_all()
+#     new_dam = Dam(id=1, dam_name="Angat", dam_level="500")
+#     db.session.add(new_dam)
+#     db.session.commit()
 
 # with app.app_context():
 #     dam = Dam.query.get(1)
